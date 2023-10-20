@@ -1,0 +1,22 @@
+Angular services:
+In Angular, services are a fundamental part of the framework that provide a way to share data, functionality, and state across different parts of your application. Services are essentially singleton objects that can be injected into components, other services, and modules, making them a central place for organizing and managing various application features and functionality.
+
+Here are key aspects of Angular services:
+
+Singletons: Angular services are designed to be singletons, which means that only one instance of a service is created and shared across the application. This ensures that data and functionality are consistent and shared across components and modules.
+
+Dependency Injection: Services can be injected into components, other services, and modules using Angular's dependency injection system. This makes it easy to access the service's methods and data throughout your application.
+
+Separation of Concerns: Services help in achieving a separation of concerns in your application. They allow you to encapsulate specific functionality and data into reusable, standalone units, which promotes maintainability and testability.
+
+Reusability: Services can be reused across different parts of your application. For example, you can create a data service to handle API requests and use it in multiple components that need access to the same data.
+
+Modularity: Services promote modularity in your application by allowing you to organize and group related functionality and data into separate service classes. This makes it easier to manage and maintain your codebase.
+
+Common use cases for Angular services include:
+
+Data services: Managing data retrieval and manipulation, such as making HTTP requests to an API or handling local data storage.
+Utility services: Providing utility functions or helpers that can be used across multiple components.
+State management services: Managing the state of your application, including user authentication and application-wide settings.
+Inter-component communication: Facilitating communication and data sharing between different components in the application.
+To create an Angular service, you typically use the Angular CLI or create a TypeScript class and decorate it with the @Injectable decorator. This decorator tells Angular that the class can be injected as a service.
